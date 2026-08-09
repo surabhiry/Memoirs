@@ -2,6 +2,266 @@
 
 {% block content %}
 
-{% include "components/hero.html" %}
+<main class="mx-auto max-w-6xl px-6 pb-32 pt-8 sm:px-8 lg:px-10">
+
+    <!-- small identity / index -->
+    <header class="flex items-center justify-between">
+        <a href="/" class="font-serif text-2xl tracking-tight">
+            Memoirs
+        </a>
+
+        <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-400">
+            2026
+        </span>
+    </header>
+
+
+    <!-- OPENING -->
+    <section class="relative min-h-[72vh] py-24">
+
+        <p class="mb-10 font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-400">
+            personal archive / 01
+        </p>
+
+        <h1 class="max-w-3xl font-serif text-5xl leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+            Things I've made,
+            seen, read,
+            watched &amp; remembered.
+        </h1>
+
+        <div class="ml-[10%] mt-16 max-w-xs rotate-[-2deg]">
+            <p class="font-mono text-sm leading-6 text-neutral-500">
+                a place for things<br>
+                that would otherwise<br>
+                disappear.
+            </p>
+
+            <div class="mt-3 h-px w-16 bg-neutral-300"></div>
+        </div>
+
+        <span class="absolute bottom-10 right-2 font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-400">
+            scroll ↓
+        </span>
+
+    </section>
+
+
+    <!-- PHOTOGRAPH -->
+    <section class="border-t border-neutral-200 pt-10">
+
+        <div class="mb-12 flex items-center justify-between">
+            <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-400">
+                01 / photograph
+            </span>
+
+            <span class="font-mono text-[10px] text-neutral-400">
+                somewhere / sometime
+            </span>
+        </div>
+
+
+        <div class="grid items-start gap-12 sm:grid-cols-12">
+
+            <div class="sm:col-span-7 sm:col-start-2">
+
+                <div class="relative aspect-[4/5] overflow-hidden bg-neutral-100">
+
+                    <!-- temporary photograph -->
+                    <div class="absolute left-[15%] top-[12%] h-[68%] w-[65%] rotate-[-2deg] bg-white shadow-sm">
+
+                        <div class="absolute inset-5 border border-neutral-200"></div>
+
+                        <span class="absolute bottom-5 left-5 font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-300">
+                            photograph
+                        </span>
+
+                    </div>
+
+                    <!-- small piece of tape -->
+                    <div class="absolute left-1/2 top-5 h-5 w-20 -translate-x-1/2 rotate-[2deg] bg-white/70"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="sm:col-span-3 sm:col-start-10 sm:pt-16">
+
+                <p class="font-serif text-xl leading-8 text-neutral-700">
+                    Nothing particularly important.
+                    Just something I wanted to remember.
+                </p>
+
+                <p class="mt-6 font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                    photograph placeholder
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOTE -->
+    <section class="mt-40">
+
+        <div class="grid gap-8 sm:grid-cols-12">
+
+            <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-400 sm:col-span-2">
+                02 / note
+            </span>
+
+
+            <div class="sm:col-span-7 sm:col-start-4">
+
+                <p class="font-serif text-3xl leading-[1.3] sm:text-4xl">
+                    “Maybe growing up is mostly learning
+                    what deserves to stay with you.”
+                </p>
+
+                <div class="mt-8 flex items-center gap-4">
+                    <span class="h-px w-10 bg-neutral-300"></span>
+
+                    <span class="font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                        an unfinished thought
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CURRENTLY -->
+    <section class="mt-40 border-t border-neutral-200 pt-10">
+
+        <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-400">
+            03 / currently
+        </span>
+
+
+        <div class="mt-14 grid gap-24 sm:grid-cols-2">
+
+
+            <!-- BOOK -->
+
+            <article>
+
+                <p class="font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                    reading
+                </p>
+
+                <div class="mt-6 border-l border-neutral-300 pl-6">
+
+                    <h2 class="font-serif text-3xl leading-tight sm:text-4xl">
+                        Madonna in a Fur Coat
+                    </h2>
+
+                    <p class="mt-3 text-sm text-neutral-500">
+                        Sabahattin Ali
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- FILM -->
+
+            <article class="sm:pt-24">
+
+                <p class="font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                    recently watched
+                </p>
+
+                <h2 class="mt-6 font-serif text-3xl leading-tight sm:text-4xl">
+                    Final Solution
+                </h2>
+
+                <p class="mt-3 font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                    documentary
+                </p>
+
+                <p class="mt-8 max-w-sm border-t border-neutral-200 pt-5 text-sm leading-6 text-neutral-500">
+                    A small record of something watched recently.
+                    Thoughts will probably come later.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT -->
+    <section class="mt-40">
+
+        <div class="grid gap-8 sm:grid-cols-12">
+
+            <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-400 sm:col-span-3">
+                04 / made
+            </span>
+
+
+            <div class="sm:col-span-7 sm:col-start-5">
+
+                <div class="relative rotate-[0.5deg] border border-neutral-300 bg-neutral-50 px-7 py-8">
+
+                    <div class="absolute -top-3 left-[42%] h-5 w-20 rotate-[-2deg] bg-white/80"></div>
+
+                    <p class="font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                        work in progress
+                    </p>
+
+                    <h2 class="mt-8 font-serif text-3xl sm:text-4xl">
+                        RAG-based project
+                    </h2>
+
+                    <p class="mt-5 max-w-lg text-sm leading-6 text-neutral-500">
+                        Something I'm building around retrieval,
+                        context, and making information more useful.
+                    </p>
+
+                    <div class="mt-10 flex justify-between border-t border-neutral-200 pt-4 font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                        <span>software</span>
+                        <span>in progress</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- END -->
+    <section class="mt-48 border-t border-neutral-200 py-16">
+
+        <p class="font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-400">
+            05 / end of page
+        </p>
+
+        <p class="mt-8 max-w-xl font-serif text-3xl leading-tight sm:text-4xl">
+            More things will find their way here.
+        </p>
+
+    </section>
+
+
+    <footer class="flex justify-between border-t border-neutral-200 pt-5 font-mono text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+
+        <span>Memoirs</span>
+
+        <span>made, seen, read &amp; remembered</span>
+
+    </footer>
+
+</main>
 
 {% endblock %}
