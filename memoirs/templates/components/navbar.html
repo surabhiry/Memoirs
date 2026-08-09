@@ -1,25 +1,26 @@
-<nav class="sticky top-0 z-50 border-b border-neutral-200 bg-stone-50/80 backdrop-blur">
+<nav class="sticky top-0 z-50 border-b border-neutral-200 bg-stone-50/90 backdrop-blur">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
 
-        <a href="/" class="font-serif text-2xl tracking-wide">
+        <a href="/" class="font-serif text-2xl tracking-wide hover:opacity-70 transition">
             Memoirs
         </a>
 
-        <ul class="hidden items-center gap-8 text-sm md:flex">
+        <div class="hidden items-center gap-8 text-sm md:flex">
+            <a href="/#projects" class="transition hover:text-neutral-500">Projects</a>
+            <a href="/#writing" class="transition hover:text-neutral-500">Writing</a>
+            <a href="/#photography" class="transition hover:text-neutral-500">Photography</a>
+            <a href="/#library" class="transition hover:text-neutral-500">Library</a>
+            <a href="/#journal" class="transition hover:text-neutral-500">Journal</a>
+            <a href="/#about" class="transition hover:text-neutral-500">About</a>
+        </div>
 
-            <li><a href="#">Projects</a></li>
-
-            <li><a href="#">Writing</a></li>
-
-            <li><a href="#">Photography</a></li>
-
-            <li><a href="#">Library</a></li>
-
-            <li><a href="#">Journal</a></li>
-
-            <li><a href="#">About</a></li>
-
-        </ul>
+        <button
+            type="button"
+            class="rounded-full border border-neutral-300 px-4 py-2 text-sm md:hidden"
+            aria-label="Open navigation"
+        >
+            Menu
+        </button>
 
     </div>
 </nav>
