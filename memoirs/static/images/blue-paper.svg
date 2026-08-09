@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" seed="17" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+      <feComponentTransfer in="mono" result="grain">
+        <feFuncA type="table" tableValues="0 0.16"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="grain" mode="soft-light"/>
+    </filter>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173f68"/>
+      <stop offset="0.48" stop-color="#214f7b"/>
+      <stop offset="1" stop-color="#102f50"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.48" stop-color="#fff" stop-opacity="0.035"/>
+      <stop offset="0.5" stop-color="#061a2d" stop-opacity="0.13"/>
+      <stop offset="0.52" stop-color="#fff" stop-opacity="0.035"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#blue)"/>
+  <rect width="1600" height="1000" fill="url(#fold)"/>
+  <path d="M800 0 C786 240 816 430 798 650 C790 790 812 900 800 1000" fill="none" stroke="#071d33" stroke-opacity=".12" stroke-width="14"/>
+  <path d="M0 510 C350 492 570 526 820 505 C1080 483 1320 520 1600 500" fill="none" stroke="#eef7ff" stroke-opacity=".045" stroke-width="11"/>
+  <rect width="1600" height="1000" filter="url(#paper)" fill="none"/>
+</svg>
