@@ -1,4 +1,5 @@
 {% load static %}
+{% static "images/blue-paper.svg" as blue_paper %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,13 @@
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
 </head>
 
-<body class="bg-stone-50 text-neutral-800">
-
-{% include "components/navbar.html" %}
-
+<body
+    class="min-h-screen text-[#f4efe4] antialiased"
+    style="background-image: url('{{ blue_paper }}');"
+>
 {% block content %}
 {% endblock %}
 
-{% include "components/footer.html" %}
+
 </body>
 </html>
