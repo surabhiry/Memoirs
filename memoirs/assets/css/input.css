@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Tailwind v4 does not automatically scan Django templates outside the
+   stylesheet's source tree in every CLI setup. Keep the template source
+   explicit so all utility classes used by Django are generated. */
+@source "../../templates";
+
 @layer components {
   .container-custom {
     @apply mx-auto max-w-6xl px-6;
